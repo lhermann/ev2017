@@ -1,0 +1,19 @@
+<nav class="site-nav">
+
+    <div class="o-wrapper u-center">
+
+        <a class="site-nav__child site-nav__logo" href="{{ site.baseurl }}/">
+            <img class="site-logo" src="/apple-touch-icon.png" alt="">
+        </a>
+
+        <ul class="site-nav__child site-nav__list">
+            {% for page in site.pages %}
+                {% if page.title %}
+                    <li class="site-nav__item"><a href="{{page.url}}" class="site-nav__link  site-nav__{{page.title | slugify}}">{{page.title}}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+    </div>
+
+</nav>

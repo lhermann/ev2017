@@ -1,0 +1,84 @@
+///* ========================================================================
+//   #COLORS
+//   ======================================================================== */
+
+/**
+ * Brand Colors
+ */
+
+$c-primary:               #072a3f;
+$c-primary-lighter:       lighten($c-primary, 10%);
+$c-primary-darker:        darken($c-primary, 10%);
+
+$c-secondary:             #115d69;
+$c-secondary-lighter:     lighten($c-secondary, 10%);
+$c-secondary-darker:      darken($c-secondary, 15%);
+
+$c-white:       #fff;
+$c-gray-1:      #f8f8f8;
+$c-gray-2:      #f0f0f0;
+$c-gray-3:      #e8e8e8;
+$c-gray-4:      #b6b6b6;
+$c-gray-5:      #8e8e8e;
+$c-gray-6:      #666;
+$c-gray-7:      #4d4d4d;
+$c-gray-8:      #333;
+$c-gray-9:      #262626;
+$c-black:       #000;
+
+$c-dark:        #1e0d0b;
+$c-light:       #eee8e2;
+$c-green:       #39b54a;
+$c-red:         #ed1c24;
+
+/**
+ * Semantics
+ */
+// Semantic color variables are daisy-chained onto their literal names.
+
+$c-text:                        $c-gray-8;
+$c-textalt:                     $c-gray-6;
+$c-textmuted:                   rgba($c-gray-7, .45);
+$c-accent:                      $c-primary;
+$c-background:                  $c-gray-1;
+$c-background-transparent:      rgba($c-black, .04);
+$c-border:                      $c-gray-2;
+
+$c-link:                        $c-primary;
+$c-link-hover:                  $c-primary-darker;
+
+$c-nav-link:                    $c-white;
+
+$c-btn:                         #fff;
+$c-btn-bg:                      $c-primary;
+$c-btn-bg-hover:                $c-primary-darker;
+
+$c-secondary-btn:               #fff;
+$c-secondary-btn-bg:            $c-secondary;
+$c-secondary-btn-bg-hover:      $c-secondary-darker;
+
+$c-tertiary-btn:                #fff;
+$c-tertiary-btn-bg:             #449d44;
+$c-tertiary-btn-bg-hover:       #398439;
+
+/**
+ * Gradients
+ */
+$gradient-primary-light:            $c-primary;
+$gradient-primary-dark:             darken($c-primary, 15%);
+
+$gradient-primary:                  linear-gradient(135deg, $gradient-primary-light 0%, $gradient-primary-dark 100%);
+$gradient-primary-hover:            linear-gradient(135deg, darken($gradient-primary-light, 1%) 0%, darken($gradient-primary-dark, 5%) 100%);
+
+$gradient-secondary-light:          $c-secondary;
+$gradient-secondary-dark:           darken($c-secondary, 15%);
+
+$gradient-secondary:                linear-gradient(135deg, $gradient-secondary-light 0%, $gradient-secondary-dark 100%);
+$gradient-secondary-hover:          linear-gradient(135deg, darken($gradient-secondary-light, 1%) 0%, darken($gradient-secondary-dark, 5%) 100%);
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+/* ==========================================================================
+   #ANCHOR LINKS
+   ========================================================================== */
+
+.c-a {
+    transition: $global-transition;
+    font-style: italic;
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: $c-primary;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}

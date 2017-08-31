@@ -1,0 +1,62 @@
+/* ==========================================================================
+   #HERO
+   ========================================================================== */
+
+.c-hero {
+    // background-image: url('../img/hero-bg.jpg');
+    // background-size: cover;
+    color: $c-primary;
+    font-size: 150%;
+}
+
+    .c-hero__img,
+    .c-hero__content {
+        position: absolute;
+    }
+
+    .c-hero__img {
+        bottom: 5%;
+        left: 10%;
+        width: 80%;
+
+        > img {
+            // max-height: 100%;
+        }
+    }
+
+    .c-hero__content {
+        font-size: 1.9vw;
+        width: 100%;
+        top: $unit;
+    }
+
+        .c-hero__title {
+            font-size: 250%;
+            margin-bottom: 0;
+        }
+
+        .c-hero__subtitle {
+            font-family: $font-secondary;
+            letter-spacing: .05em;
+            line-height: 1;
+        }
+
+        .c-hero__lead {
+            color: $c-secondary;
+            font-size: 110%;
+            letter-spacing: .05em;
+        }
+
+        .c-hero__welcome {
+            font-size: 80%;
+
+            > * {
+                margin-bottom: $unit / 2;
+            }
+        }
+
+        .c-hero__player {
+            box-shadow: 0 20px 40px rgba($c-dark, .4);
+            margin: 0 $unit * 2;
+            background-color: $c-black;
+        }

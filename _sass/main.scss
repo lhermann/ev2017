@@ -1,0 +1,162 @@
+/* ==========================================================================
+   INUITCSS
+   ========================================================================== */
+
+/**
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+
+
+
+////
+// SETTINGS
+////
+@import 'settings.config';
+@import '../node_modules/inuitcss/settings/settings.core';
+@import 'settings.global';
+@import 'settings.colors';
+
+// Reassign `$inuit-global-spacing-unit` to `$unit`.
+$unit-tiny:     $inuit-global-spacing-unit-tiny;
+$unit-small:    $inuit-global-spacing-unit-small;
+$unit:          $inuit-global-spacing-unit;
+$unit-large:    $inuit-global-spacing-unit-large;
+$unit-huge:     $inuit-global-spacing-unit-huge;
+
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Merriweather', serif;
+
+
+
+////
+// TOOLS
+////
+// @import '../node_modules/inuitcss/tools/tools.rem';
+@import '../node_modules/inuitcss/tools/tools.font-size';
+@import '../node_modules/inuitcss/tools/tools.clearfix';
+@import '../node_modules/inuitcss/tools/tools.hidden';
+@import '../node_modules/sass-mq/mq';
+
+// Reassign lengthy font-size mixin to `font-size()`.
+@mixin font-size($args...) {
+  @include inuit-font-size($args...);
+}
+
+
+
+
+////
+// GENERIC
+////
+@import '../node_modules/inuitcss/generic/generic.box-sizing';
+@import '../node_modules/inuitcss/generic/generic.normalize';
+@import '../node_modules/inuitcss/generic/generic.reset';
+@import '../node_modules/inuitcss/generic/generic.shared';
+
+
+
+
+////
+// ELEMENTS
+////
+@import '../node_modules/inuitcss/elements/elements.page';
+@import '../node_modules/inuitcss/elements/elements.headings';
+@import '../node_modules/inuitcss/elements/elements.images';
+@import '../node_modules/inuitcss/elements/elements.tables';
+
+html {
+    background-color: $c-white;
+    font-family: $font-primary;
+    font-weight: 300;
+    color: $c-text;
+}
+
+h1 {
+    font-family: $font-primary;
+}
+
+h2,
+h3 {
+    font-family: $font-primary;
+    font-weight: 500;
+}
+
+hr {
+    border-color: $c-secondary;
+    border-top: 0;
+}
+
+strong {
+    font-weight: 500;
+}
+
+
+
+////
+// OBJECTS
+////
+$inuit-wrapper-width: 920px;
+@import '../node_modules/inuitcss/objects/objects.wrapper';
+@import '../node_modules/inuitcss/objects/objects.layout';
+@import '../node_modules/inuitcss/objects/objects.media';
+@import '../node_modules/inuitcss/objects/objects.flag';
+@import '../node_modules/inuitcss/objects/objects.list-bare';
+@import '../node_modules/inuitcss/objects/objects.list-inline';
+@import '../node_modules/inuitcss/objects/objects.box';
+@import '../node_modules/inuitcss/objects/objects.block';
+@import '../node_modules/inuitcss/objects/objects.ratio';
+@import '../node_modules/inuitcss/objects/objects.crop';
+// @import '../node_modules/inuitcss/objects/objects.tables';
+@import '../node_modules/inuitcss/objects/objects.pack';
+
+
+
+
+////
+// COMPONENTS
+////
+// Build and include your project’s UI Compoments here.
+@import 'components.section';
+@import 'components.hero';
+@import 'components.buttons';
+@import 'components.card';
+@import 'components.page-wrapper';
+@import 'components.page-footer';
+@import 'components.countdown';
+@import 'components.newsletter';
+@import 'components.a';
+
+
+
+
+////
+// PLUGINS
+////
+// @import 'animate';
+
+
+////
+// UTILITIES
+////
+$animation: 1s;
+@import '../node_modules/inuitcss/utilities/utilities.clearfix';
+@import '../node_modules/inuitcss/utilities/utilities.widths';
+@import '../node_modules/inuitcss/utilities/utilities.headings';
+@import '../node_modules/inuitcss/utilities/utilities.print';
+@import '../node_modules/inuitcss/utilities/utilities.hide';
+@import 'utilities.orientation';
+@import 'utilities.responsive-spacings';
+@import 'utilities.responsive-hide';
+@import 'utilities.owl';
+@import 'utilities.text-align';
+@import 'utilities.animation';
+
+.u-normal {
+    font-weight: normal;
+}
+
+.u-lead {
+    font-size: 150%;
+}

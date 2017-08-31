@@ -1,0 +1,19 @@
+{
+  "name": "ev2017",
+  "version": "1.0.0",
+  "description": "Boilerplate for jekyll based on h5bp and inuit-css",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "inuitcss": "^6.0.0-beta.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukas Hermann",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lhermann/ev2017.git"
+  }
+}

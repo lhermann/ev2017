@@ -1,0 +1,56 @@
+/* ==========================================================================
+   #NEWSLETTER
+   ========================================================================== */
+
+.c-newsletter {
+    font-family: 'IM Fell English', serif;
+}
+
+    .c-newsletter__img {
+        > img {
+            max-width: 160px;
+        }
+    }
+
+    .c-newsletter__title {
+        font-size: 300%;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+
+    .c-newsletter__meta {
+        color: $c-secondary;
+        font-size: 140%;
+        font-style: italic;
+    }
+
+    .c-newsletter__form {
+        font-size: 150%;
+
+        input {
+            background-color: $c-secondary;
+            border-width: 0;
+            color: $c-primary;
+            float: left;
+            font-family: 'IM Fell English', serif;
+            height: $unit * 2;
+            line-height: 2;
+            padding: $unit / 2;
+            width: 80%;
+
+            &::-webkit-input-placeholder { color: $c-primary; }
+            &:-moz-placeholder { color: $c-primary; }
+            &:-ms-input-placeholder { color: $c-primary; }
+        }
+
+        button {
+            border-width: 0;
+            float: left;
+            height: $unit * 2;
+            padding: $unit / 4;
+
+            > img {
+                width: 1.5em;
+            }
+        }
+    }
