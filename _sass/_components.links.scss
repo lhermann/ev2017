@@ -1,0 +1,70 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+/**
+ * 1. Remove default button styling
+ * 2. Remove default link styling
+ */
+.c-link {
+    display: inline;
+    border: 0;            /* 1 */
+    background: none;     /* 1 */
+    cursor: pointer;      /* 1 */
+    padding: 0;           /* 1 */
+    width: 100%;
+    text-align: inherit;  /* 1 */
+    text-decoration: none; /* 2 */
+    line-height: inherit; /* 1 */
+    color: $c-text;
+    font-weight: inherit; /* 1 */
+
+    &.is-active {
+        font-weight: 500;
+    }
+}
+
+.c-link--touch {
+    @include mq($until: desktop) {
+        padding-top: $unit-tiny;
+        padding-bottom: $unit-tiny;
+    }
+}
+
+.c-link--block {
+    display: block;
+    padding: $unit-small $unit;
+    white-space: nowrap;
+}
+
+.c-link--dotted {
+    border-bottom: 1px dotted $c-textmuted;
+}
+
+.c-link--white {
+    border-color: rgba($c-white, .2);
+    color: rgba($c-white, .8);
+
+    &:hover {
+        border-color: $c-white;
+        color: $c-white;
+    }
+}
+
+.c-link--primary {
+    color: $c-primary;
+
+    &:active,
+    &:hover {
+        background-color: $c-gray-2;
+    }
+}
+
+.c-link--secondary {
+    color: $c-secondary;
+
+    &:active,
+    &:hover {
+        background-color: $c-gray-2;
+    }
+}

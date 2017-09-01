@@ -3,22 +3,21 @@
    ========================================================================== */
 
 .c-page-footer {
-    background-image: url('../img/footer.jpg');
-    background-size: cover;
-    padding-top: 21.63%;
-    position: relative;
+    background-color: $c-primary;
+    padding: $unit 0;
+    color: $c-white;
 }
 
-    .c-page-footer__inner {
-        bottom: 0;
-        color: $c-primary;
-        font-size: 70%;
-        line-height: 1.1;
-        padding-bottom: $unit / 5;
-        position: absolute;
-        width: 100%;
+    // .c-page-footer__inner {
+    //     bottom: 0;
+    //     color: $c-primary;
+    //     font-size: 70%;
+    //     line-height: 1.1;
+    //     padding-bottom: $unit / 5;
+    //     position: absolute;
+    //     width: 100%;
 
-        > p {
-            margin-bottom: 0;
-        }
-    }
+    //     > p {
+    //         margin-bottom: 0;
+    //     }
+    // }

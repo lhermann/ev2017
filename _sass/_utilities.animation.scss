@@ -78,3 +78,12 @@ $animation:  $global-transition !default;
         transform: translateY(0);
     }
 }
+
+.u-ani--move-down {
+    transform: translateY(-30px);
+
+    &.u-ani--start,
+    &.u-ani--hover:hover {
+        transform: translateY(0);
+    }
+}

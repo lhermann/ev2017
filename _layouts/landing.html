@@ -2,13 +2,9 @@
 layout: default
 ---
 
-<section id="hero" class="o-ratio o-ratio--16:9 c-section c-section--hero c-hero">
+<section id="hero" class="c-hero">
 
-    <div class="c-hero__img u-ani u-ani--move-up u-ani--fade-in jsAniStart">
-        <img src="/assets/img/logo-image.svg" alt="">
-    </div>
-
-    <div class="c-hero__content u-text-center">
+    <div class="c-hero__head u-text-center">
         <h1 class="c-hero__title">Macht. Glaube. Hoffnung.</h1>
         <p class="c-hero__subtitle">Was w&uuml;rde Luther uns heute sagen?</p>
         <!-- <p class="c-hero__lead">Eine Themenserie</p> -->
@@ -26,38 +22,56 @@ layout: default
         </div> -->
     </div>
 
+    <div class="c-hero__img u-ani u-ani--move-down u-ani--fade-in jsAniStart">
+        <img src="/assets/img/logo-image.svg" alt="">
+    </div>
+
+    <div class="c-hero__sub u-text-center u-ani u-ani--move-up u-ani--fade-in jsAniStart">
+        <p>
+            Eine Themenreihe in der
+            <br><strong class="u-lead">Liederhalle Stuttgart</strong>
+            <br>zur Reformation und ihrer Bedeutung für uns heute.
+        </p>
+        <div class="o-ratio o-ratio--16:9 u-2/3@tablet u-box-center">
+            <iframe src="https://www.youtube-nocookie.com/embed/JrdAJEWSTxg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
 </section>
 
 
-<section id="program" class="c-section">
+<section id="countdown" class="o-wrapper u-mt">
 
-    <div class="o-wrapper c-section__body">
-
-        <div class="o-box c-countdown u-content-center u-mb+">
-            <ul id="jsCountdown" class="c-countdown__list">
-                <li class="c-countdown__item">
-                    <h3 class="c-countdown__name">Tage</h3>
-                    <div id="days" class="c-countdown__value">45</div>
-                </li>
-                <li class="c-countdown__item">
-                    <h3 class="c-countdown__name">Stunden</h3>
-                    <div id="hours" class="c-countdown__value">12</div>
-                </li>
-                <li class="c-countdown__item">
-                    <h3 class="c-countdown__name">Minuten</h3>
-                    <div id="minutes" class="c-countdown__value">12</div>
-                </li>
-                <li class="c-countdown__item">
-                    <h3 class="c-countdown__name">Sekunden</h3>
-                    <div id="seconds" class="c-countdown__value">50</div>
-                </li>
-            </ul>
-            <div class="c-countdown__display">
-                bis zu Thema 1: <strong>Licht am Horizont – Luthers Welt am Scheideweg</strong>
-            </div>
+    <div class="o-box c-countdown u-content-center u-mb+">
+        <ul id="jsCountdown" class="c-countdown__list">
+            <li class="c-countdown__item">
+                <h3 class="c-countdown__name">Tage</h3>
+                <div id="days" class="c-countdown__value">45</div>
+            </li>
+            <li class="c-countdown__item">
+                <h3 class="c-countdown__name">Stunden</h3>
+                <div id="hours" class="c-countdown__value">12</div>
+            </li>
+            <li class="c-countdown__item">
+                <h3 class="c-countdown__name">Minuten</h3>
+                <div id="minutes" class="c-countdown__value">12</div>
+            </li>
+            <li class="c-countdown__item">
+                <h3 class="c-countdown__name">Sekunden</h3>
+                <div id="seconds" class="c-countdown__value">50</div>
+            </li>
+        </ul>
+        <div class="c-countdown__display">
+            bis zu Thema 1: <strong>Licht am Horizont – Luthers Welt am Scheideweg</strong>
         </div>
+    </div>
 
-        <h2>Themen</h2>
+</section>
+
+
+<section id="program" class="o-wrapper u-mt">
+
+        <h2 class="u-text-center">Themen</h2>
         <ol class="o-list-bare u-owl">
             <li class="c-card c-card--highlight">
                 <div class="c-card__number">1</div>
@@ -152,7 +166,7 @@ layout: default
             <li class="c-card">
                 <div class="c-card__number">6</div>
                 <div class="c-card__imgwrapper">
-                    <img class="c-card__img" src="/assets/img/16x9.jpg" alt="">
+                    <img class="c-card__img" src="/assets/img/thema6-320x180.jpg" alt="">
                 </div>
                 <div class="c-card__body">
                     <div>
@@ -169,25 +183,37 @@ layout: default
             </li>
         </ol>
 
-    </div>
-
-    <!-- <div class="c-section__foot c-section__foot--1"></div> -->
 </section>
 
 
+<section id="description" class="o-wrapper u-mt++">
 
-
-<section id="description" class="c-section">
-    <!-- <div class="c-section__head c-section__head--2"></div> -->
-
-    <div class="o-wrapper c-section__body">
-        <h2>Beschreibung</h2>
-        <p class="u-lead">Vorträge über die Reformation und die Bedeutung für unsere Welt heute</p>
-        <p>Das Reformationsjubiläum 2017 hat begonnen. An vielen Orten und von vielen Kirchen und Organisationen werden Veranstaltungen und Infos angeboten. Die Worte „Reformation" und „Luther" kommen häufig vor, aber über den Inhalt der Reformation wird wenig bis gar nichts gesagt. Noch weniger hört man darüber, welche Bedeutung die Reformation für uns heute hat - denn für die meisten Menschen ist die Reformation lediglich ein historisches Ereignis.</p>
-    </div>
+    <h2 class="u-text-center">Beschreibung</h2>
+    <p class="u-lead">Vorträge über die Reformation und die Bedeutung für unsere Welt heute</p>
+    <p>Das Reformationsjubiläum 2017 hat begonnen. An vielen Orten und von vielen Kirchen und Organisationen werden Veranstaltungen und Infos angeboten. Die Worte „Reformation" und „Luther" kommen häufig vor, aber über den Inhalt der Reformation wird wenig bis gar nichts gesagt. Noch weniger hört man darüber, welche Bedeutung die Reformation für uns heute hat - denn für die meisten Menschen ist die Reformation lediglich ein historisches Ereignis.</p>
 
 </section>
 
+
+<section id="location" class="o-wrapper u-text-center u-mt++">
+
+    <h2>Veranstaltungsort</h2>
+    <p class="u-lead u-mb--">
+        Liederhalle Stuttgart
+    </p>
+    <ul class="o-list-inline">
+        <li class="u-mr-">
+            <a class="c-link c-link--secondary c-link--dotted" href="http://www.liederhalle-stuttgart.de" target="_blank">Website <span class="u-ic-open-in-new"></span></a>
+        </li>
+        <li>
+            <a class="c-link c-link--secondary c-link--dotted" href="https://www.google.de/maps/place/Kultur-+und+Kongresszentrum+Liederhalle/@48.7791922,9.1670187,17z/data=!3m1!4b1!4m5!3m4!1s0x4799db3825f669f7:0x7e63825273e57d5e!8m2!3d48.7791922!4d9.1692074" target="_blank">Auf Karte anzeigen <span class="u-ic-open-in-new"></span></a>
+        </li>
+    </ul>
+    <figure>
+        <img src="/assets/img/location.jpg">
+    </figure>
+
+</section>
 
 
 
