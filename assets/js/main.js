@@ -1,10 +1,10 @@
 /**
  * Resize Sections
  */
-$(window).resize(function() {
-    $('.jsHeight100').css('height', $(window).width() * 0.56).css('max-height', $(window).height() * 0.95);
-});
-$(window).trigger('resize');
+// $(window).resize(function() {
+//     $('.jsHeight100').css('height', $(window).width() * 0.56).css('max-height', $(window).height() * 0.95);
+// });
+// $(window).trigger('resize');
 
 /**
  * Countdown Timer
@@ -37,5 +37,7 @@ function spanEach(string) {
  * Start Animation
  */
 $(window).ready(function(){
-    $(".jsAniStart").addClass("u-ani--start");
+    setTimeout(function(){
+        $(".jsAniStart").addClass("u-ani--start");
+    }, 300);
 });
