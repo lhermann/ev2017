@@ -3,53 +3,8 @@
    ========================================================================== */
 
 .c-section {
-    position: relative;
-
-    &--hero {
-        overflow: visible; // counteract 'overflow: hidden;' of .o-ratio
-        z-index: 3;
+    &--primary {
+        background-image: $gradient-primary;
+        color: $c-white;
     }
 }
-
-    .c-section__body {
-        padding-bottom: $unit;
-        padding-top: $unit;
-        position: relative;
-        z-index: 2;
-    }
-
-    .c-section__head,
-    .c-section__foot {
-        background-size: cover;
-        position: absolute;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .c-section__head {
-        top: 0;
-
-        &--1 {
-            background-image: url('../img/section-head1.jpg');
-            padding-top: 8.875%;
-        }
-
-        &--2 {
-            background-image: url('../img/section-head2.jpg');
-            padding-top: 11.19%;
-        }
-    }
-
-    .c-section__foot {
-        bottom: 0;
-
-        &--1 {
-            background-image: url('../img/section-foot1.jpg');
-            padding-top: 53.5%;
-        }
-
-        &--2 {
-            background-image: url('../img/section-foot2.jpg');
-            padding-top: 11.19%;
-        }
-    }

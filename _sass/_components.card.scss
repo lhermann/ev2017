@@ -13,6 +13,10 @@
     &--highlight {
         border-color: $c-primary;
     }
+
+    @include mq($until: tablet) {
+        font-size: 80%;
+    }
 }
 
     .c-card__number {
@@ -41,6 +45,11 @@
         min-height: 90px;
         overflow: hidden;
         flex-basis: 160px;
+        flex-shrink: 0;
+
+        @include mq($until: tablet) {
+            flex-basis: 80px;
+        }
     }
 
         .c-card__img {
@@ -57,6 +66,10 @@
         display: flex;
         padding: $unit-small $unit;
         align-items: center;
+
+        @include mq($until: tablet) {
+            padding: $unit-tiny $unit-small;
+        }
     }
 
     .c-card__body {
@@ -66,6 +79,10 @@
         .c-card__title {
             margin-bottom: $unit-tiny;
             color: $c-primary;
+
+            @include mq($until: tablet) {
+                font-size: 150%;
+            }
         }
 
         .c-card__subtitle {
@@ -92,13 +109,14 @@
             color: $c-primary;
         }
 
-        span {
+        em {
             font-size: 180%;
             font-weight: 500;
+            font-style: normal;
         }
     }
 
-    .c-card__date span {
+    .c-card__date em {
         font-size: 260%;
     }
 

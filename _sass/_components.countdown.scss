@@ -25,6 +25,10 @@
             position: relative; /* [2] */
             text-align: center;
 
+            @include mq($until: tablet) {
+                font-size: 1.8vw;
+            }
+
             & + & {
                 margin-left: 2.2em; /* [3] */
 
@@ -48,7 +52,7 @@
              *    widths which makes the countdown jump continually
              */
             .c-countdown__value {
-                font-size: 800%;
+                font-size: 700%;
                 line-height: 1;
                 text-shadow: 0 0 .05em rgba($c-primary, .4);
 
@@ -60,4 +64,8 @@
 
         .c-countdown__display {
             font-size: 150%;
+
+            @include mq($until: tablet) {
+                font-size: 80%;
+            }
         }

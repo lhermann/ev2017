@@ -65,7 +65,7 @@ $c-tertiary-btn-bg-hover:       #398439;
  * Gradients
  */
 $gradient-primary-light:            $c-primary;
-$gradient-primary-dark:             darken($c-primary, 15%);
+$gradient-primary-dark:             $c-secondary;
 
 $gradient-primary:                  linear-gradient(135deg, $gradient-primary-light 0%, $gradient-primary-dark 100%);
 $gradient-primary-hover:            linear-gradient(135deg, darken($gradient-primary-light, 1%) 0%, darken($gradient-primary-dark, 5%) 100%);

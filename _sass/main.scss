@@ -71,6 +71,10 @@ html {
     font-family: $font-primary;
     font-weight: 300;
     color: $c-text;
+
+    @include mq($until: tablet) {
+        @include font-size(12px, 1.5);
+    }
 }
 
 h1 {
