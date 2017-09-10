@@ -1,0 +1,122 @@
+/* ==========================================================================
+   #MODALS
+   ========================================================================== */
+
+.c-modal {
+    position: relative;
+    transition: $global-transition transform, $global-transition left, $global-transition top;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: $global-radius;
+    box-shadow: 0 5px 20px rgba($c-black, .1);
+    background-image: $gradient-primary;
+    width: 90%;
+    max-width: 700px;
+    color: $c-white;
+
+    &--hidden,
+    &--rightside {
+        position: fixed;
+        z-index: 101;
+    }
+
+    &--hidden {
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &.is-shown {
+            top: 50%;
+        }
+    }
+
+    &--rightside {
+        display: flex;
+        top: 40%;
+        left: 100%;
+        transform: translateX(-120px);
+        z-index: 101;
+        width: 700px;
+        align-items: center;
+
+        &:hover {
+            transform: translateX(-140px);
+        }
+
+        &.is-shown {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        > div {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+
+
+    // &.is-hidden {
+    //     left: calc(100% - $unit-large);
+    //     width: 800px;
+
+    //     &:hover {
+    //         transform: translateX(-$unit-small);
+    //     }
+    // }
+
+    &--rightside:before {
+        display: inline-block;
+        margin-left: 1em;
+        width: 0;
+        vertical-align: -.1em;
+        font-family: "icomoon";
+        content: "\e314";
+    }
+}
+
+    .c-modal__title {
+        position: relative;
+        padding: $unit-small $unit;
+        word-break: keep-all;
+
+        .c-modal--rightside & {
+            margin-left: -1em;
+            padding-left: $unit-large;
+            text-align: center;
+        }
+    }
+
+    .c-modal__body {
+        border: 1px solid $c-secondary;
+        border-width: 1px 0 0;
+        padding: $unit-small $unit $unit;
+
+        .c-modal--rightside & {
+            border-width: 0 1px;
+            flex-grow: 2;
+        }
+    }
+
+    .c-modal__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        border-left: 1px solid $c-secondary;
+        padding: $unit-small $unit;
+
+        .c-modal--rightside & {
+            position: relative;
+            border-left-width: 0;
+        }
+    }
+
+    .c-modal__clickplace {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }

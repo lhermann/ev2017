@@ -1,0 +1,48 @@
+/* ==========================================================================
+   #INPUT-BTN
+   ========================================================================== */
+
+/*
+ * 1. Don't break button from input
+ * 2. Remove space between inline elements
+ */
+.c-input-btn {
+    display: flex;
+    white-space: nowrap; /* 1 */
+    font-size: 0; /* 2 */
+}
+
+    .c-input-btn__input,
+    .c-input-btn__btn {
+        vertical-align: middle;
+        font-size: initial;
+    }
+
+    /*
+     * 1. Let the input grow large
+     */
+    .c-input-btn__input {
+        border-right-width: 0;
+        border-radius: $global-radius 0 0 $global-radius;
+        border-color: $c-secondary;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .2) inset;
+        padding: $unit-small - 1px;
+        flex-grow: 2; /* 1 */
+
+        .c-input-btn--no-border & {
+            border-width: 0;
+        }
+    }
+
+    /*
+     * 1. Don't break button from input
+     */
+    .c-input-btn__btn {
+        border: 1px solid $c-secondary;
+        border-radius: 0 $global-radius $global-radius 0;
+        line-height: 1.15; /* 1 */
+
+        .c-input-btn--no-border & {
+           border-width: 0;
+        }
+    }

@@ -22,10 +22,17 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+destination: dist
+source: src
+
 # Build settings
 markdown: kramdown
 
-theme: minima
+# theme: minima
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 gems:
   - jekyll-feed
@@ -35,6 +42,8 @@ exclude:
   - Gemfile.lock
   - node_modules
   - serve.sh
+  - sass
+  - webpack
 
 port: 4002
 

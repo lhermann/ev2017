@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "Boilerplate for jekyll based on h5bp and inuit-css",
   "main": "index.html",
-  "dependencies": {},
+  "dependencies": {
+    "cash-dom": "^1.3.5",
+    "jquery": "^3.2.1"
+  },
   "devDependencies": {
-    "inuitcss": "^6.0.0-beta.5"
+    "concurrently": "^3.5.0",
+    "inuitcss": "^6.0.0-beta.5",
+    "webpack": "^3.5.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others -n \"jkyll,wbpck\" -c \"green.inverse,blue.inverse\" \"bundle exec jekyll serve --incremental\" \"webpack --watch\"; exit 0"
   },
   "author": "Lukas Hermann",
   "license": "MIT",

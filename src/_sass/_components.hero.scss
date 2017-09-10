@@ -1,0 +1,54 @@
+/* ==========================================================================
+   #HERO
+   ========================================================================== */
+
+/*
+ * 1. Position absolute anchor
+ */
+.c-hero {
+    position: relative; /* 1 */
+    color: $c-primary;
+    font-size: 150%;
+}
+
+    .c-hero__head,
+    .c-hero__img,
+    .c-hero__sub {
+        padding: 2% 10%;
+        width: 100%;
+    }
+
+    .c-hero__head,
+    .c-hero__sub {
+        font-size: 1.9vw;
+    }
+
+        .c-hero__title {
+            margin-bottom: 0;
+            font-size: 250%;
+        }
+
+        .c-hero__subtitle {
+            margin-bottom: 0;
+            line-height: 1;
+            letter-spacing: .05em;
+            font-family: $font-secondary;
+        }
+
+    .c-hero__img {
+
+        > img {
+            width: 100%;
+        }
+    }
+
+    .c-hero__sub {
+        padding-bottom: 0;
+        margin-top: -6%;
+    }
+
+        .c-hero__player {
+            margin: 0 $unit * 2;
+            box-shadow: 0 20px 40px rgba($c-dark, .4);
+            background-color: $c-black;
+        }

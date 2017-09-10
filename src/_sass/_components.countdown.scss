@@ -1,0 +1,71 @@
+/* ==========================================================================
+   #countdown
+   ========================================================================== */
+
+.c-countdown {
+    font-family: $font-primary;
+}
+
+    /**
+     * 1. List reset
+     */
+    .c-countdown__list {
+        list-style: none; /* [1] */
+        margin-left: 0; /* [1] */
+    }
+
+        /**
+         * 1. Inline List
+         * 2. Anchor for Pseudo elements
+         * 3. Width of the pseudo element (0.3 * 5.5)
+         * 4. Shift by its own with
+         */
+        .c-countdown__item {
+            display: inline-block; /* [1] */
+            position: relative; /* [2] */
+            text-align: center;
+
+            @include mq($until: tablet) {
+                font-size: 1.7vw;
+            }
+
+            & + & {
+                margin-left: 2.2em; /* [3] */
+
+                &::before {
+                    content: ':';
+                    font-size: 550%;
+                    left: -.3em; /* [4] */
+                    position: absolute;
+                    text-shadow: 0 0 .1em rgba($c-primary, .4);
+                }
+            }
+        }
+
+            .c-countdown__name {
+                font-size: 120%;
+                margin-bottom: 0;
+            }
+
+            /**
+             * 1. Give the individual digits a fixed with, because they have different
+             *    widths which makes the countdown jump continually
+             */
+            .c-countdown__value {
+                font-size: 700%;
+                line-height: 1;
+                text-shadow: 0 0 .05em rgba($c-primary, .4);
+
+                > span {
+                    display: inline-block;
+                    width: .6em; /* 1 */
+                }
+            }
+
+        .c-countdown__display {
+            font-size: 150%;
+
+            @include mq($until: tablet) {
+                font-size: 80%;
+            }
+        }
