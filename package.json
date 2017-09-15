@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently --kill-others -n \"jkyll,wbpck\" -c \"green.inverse,blue.inverse\" \"bundle exec jekyll serve --incremental\" \"webpack --watch --optimize-minimize\"; exit 0",
+    "dev": "concurrently --kill-others -n \"jkyll,wbpck\" -c \"green.inverse,blue.inverse\" \"bundle exec jekyll serve --incremental\" \"webpack --watch\"; exit 0",
     "build": "webpack --optimize-minimize && bundle exec jekyll build"
   },
   "author": "Lukas Hermann",

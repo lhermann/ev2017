@@ -150,10 +150,18 @@ $inuit-wrapper-width: 920px;
     z-index: 100;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+
+    @include mq($until: tablet) {
+        position: relative;
+    }
 }
 
 .c-sticky-spacer {
     height: 60px;
+
+    @include mq($until: tablet) {
+        height: 0;
+    }
 }
 
 
