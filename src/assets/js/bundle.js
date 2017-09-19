@@ -1042,7 +1042,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__countdown_js__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__toggle_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__spambotscare_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wall_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__spambotscare_js__ = __webpack_require__(5);
 
 
 
@@ -1203,6 +1204,64 @@ function spamrep() { this.href=this.href.replace(/spambotscare/,'') }
     __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("body").on( 'click', "[data-sbs]", spamrep );
     __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("body").on( 'contextmenu', "[data-sbs]", spamrep );
 })();
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_cash_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_cash_dom__);
+/**
+ * wall.js is a toggle for the .c-wall component
+ * - Use a button like <button class="c-btn jsWallBtn" data-target="#wall"> to
+ *   toggle the wall.
+ * - html, body { height: 100%; } is required
+ * - .u-noscroll { overflow: hidden; } is required
+ *
+ * @author: Lukas Hermann
+ */
+
+
+
+var allowScrolling = true;
+
+/*
+ * show/hide wall on button press
+ */
+__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsWallBtn").on("click", function(e) {
+    toggleWall(__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(this).attr("data-target"));
+});
+
+/*
+ * hide wall on any click inside
+ */
+__WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsWall").on("click", function(e) {
+    console.log(this);
+    toggleWall(this);
+});
+
+/*
+ * helper function toggles classes
+ */
+function toggleWall(target) {
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(target).toggleClass("is-vissible");
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(document.body).toggleClass("u-noscroll");
+    allowScrolling = !allowScrolling;
+}
+
+/*
+ * Enable/Disable scrolling on #siteWrapper when mobile nav is open
+ * on iPhone/iPad’s Safari
+ */
+document.body.addEventListener("touchmove", function(e) {
+    if (allowScrolling) {
+        return true; // Enable scrolling.
+    } else {
+        e.preventDefault(); // Disable scrolling.
+    }
+});
 
 
 /***/ })

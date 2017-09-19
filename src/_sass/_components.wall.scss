@@ -1,0 +1,26 @@
+/* ==========================================================================
+   #WALL
+   ========================================================================== */
+
+.c-wall {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: $global-transition opacity, $global-transition backdrop-filter;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 200;
+    background-color: rgba($c-white, .85);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &.is-vissible {
+        visibility: visible;
+        opacity: 1;
+    }
+}

@@ -3,17 +3,37 @@ layout: default
 ---
 
 <header id="menu" class="c-sticky">
-    <div class="o-wrapper u-pv--">
-        <ul class="c-menu">
-            <!-- <li class="c-menu__item"><a href="#trailer">Trailer</a></li> -->
-            <li class="c-menu__item u-hidden-until@tablet"><a href="#countdown">Countdown</a></li>
-            <li class="c-menu__item"><a href="#program">Programm</a></li>
-            <li class="c-menu__item"><a href="#info">Infos</a></li>
-            <li class="c-menu__item"><a href="#venue">Veranstaltungsort</a></li>
+    <nav id="nav" class="o-wrapper u-text-center u-pv--">
+        <button class="c-btn c-btn--primary c-btn--ghost c-btn--icon u-mv- u-hidden-from@tablet jsWallBtn"
+            data-target="#mobile-nav">
+            <span class="u-ic-menu"></span>
+        </button>
+        <ul class="c-nav c-nav--underscore u-hidden-until@tablet">
+            <!-- <li class="c-nav__item"><a href="#trailer">Trailer</a></li> -->
+            <li class="c-nav__item"><a href="#countdown">Countdown</a></li>
+            <li class="c-nav__item"><a href="#program">Programm</a></li>
+            <li class="c-nav__item"><a href="#info">Infos</a></li>
+            <li class="c-nav__item"><a href="#venue">Veranstaltungsort</a></li>
         </ul>
-    </div>
+    </nav>
 </header>
 <div class="c-sticky-spacer"></div>
+
+<div id="mobile-nav" class="c-wall jsWall">
+    <nav class="o-wrapper u-text-center u-pv--">
+        <button class="c-btn c-btn--primary c-btn--ghost c-btn--icon u-mv- jsWallBtn"
+            data-target="#mobile-nav">
+            <span class="u-ic-close"></span>
+        </button>
+        <ul class="c-nav c-nav--vertical c-nav--animated">
+            <!-- <li class="c-nav__item"><a href="#trailer">Trailer</a></li> -->
+            <li class="c-nav__item"><a href="#countdown">Countdown</a></li>
+            <li class="c-nav__item"><a href="#program">Programm</a></li>
+            <li class="c-nav__item"><a href="#info">Infos</a></li>
+            <li class="c-nav__item"><a href="#venue">Veranstaltungsort</a></li>
+        </ul>
+    </nav>
+</div>
 
 {% include newsletter.html %}
 

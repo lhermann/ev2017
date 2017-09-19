@@ -67,6 +67,11 @@ $font-secondary: "Merriweather", serif;
 @import "../../node_modules/inuitcss/elements/elements.tables";
 @import "elements.forms";
 
+html,
+body {
+    height: 100%;
+}
+
 html {
     -webkit-font-smoothing: antialiased;
     background-color: $c-white;
@@ -141,18 +146,17 @@ $inuit-wrapper-width: 920px;
 @import "components.forms";
 @import "components.input-btn";
 @import "components.callout";
-@import "components.menu";
+@import "components.nav";
+@import "components.wall";
 
 .c-sticky {
-    position: fixed;
-    width: 100%;
-    background-color: rgba($c-white, .8);
-    z-index: 100;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-
-    @include mq($until: tablet) {
-        position: relative;
+    @include mq($from: tablet) {
+        position: fixed;
+        width: 100%;
+        background-color: rgba($c-white, .8);
+        z-index: 100;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
     }
 }
 
@@ -187,6 +191,10 @@ $animation: 1s;
 @import "utilities.text-align";
 @import "utilities.animation";
 @import "utilities.icons";
+
+.u-noscroll {
+    overflow: hidden;
+}
 
 .u-normal {
     font-weight: normal;
