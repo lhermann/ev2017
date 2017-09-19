@@ -16,6 +16,7 @@ var allowScrolling = true;
  * show/hide wall on button press
  */
 $(".jsWallBtn").on("click", function(e) {
+    e.stopPropagation();
     toggleWall($(this).attr("data-target"));
 });
 
