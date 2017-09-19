@@ -59,7 +59,7 @@
             transform: translateY(1em);
             opacity: 0;
 
-            .is-vissible & {
+            .is-visible & {
                 transform: translateY(0);
                 opacity: 1;
             }

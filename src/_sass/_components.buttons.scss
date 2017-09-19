@@ -37,7 +37,9 @@
    ========================================================================== */
 
 .c-btn--primary {
-  background-color: $c-btn-bg;
+  background-image: $c-btn-gradient;
+  background-size: 300% 100%;
+  background-position: 100%;
 
   &,
   &:hover,
@@ -49,7 +51,8 @@
 
   &:hover,
   &:focus {
-    background-color: $c-btn-bg-hover;
+    // background-image: $c-btn-bg-hover;
+    background-position: 0;
   }
 
 }

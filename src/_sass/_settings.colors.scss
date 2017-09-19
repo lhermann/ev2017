@@ -6,13 +6,13 @@
  * Brand Colors
  */
 
-$c-primary:               #072a3f;
-$c-primary-lighter:       lighten($c-primary, 30%);
-$c-primary-darker:        darken($c-primary, 10%);
+$c-primary:         #072a3f;
+$c-primary-light:   lighten($c-primary, 5%);
+$c-primary-dark:    darken($c-primary, 5%);
 
-$c-secondary:             #115d69;
-$c-secondary-lighter:     lighten($c-secondary, 10%);
-$c-secondary-darker:      darken($c-secondary, 15%);
+$c-secondary:       #115d69;
+$c-secondary-light: lighten($c-secondary, 3%);
+$c-secondary-dark:  darken($c-secondary, 5%);
 
 $c-white:       #fff;
 $c-gray-1:      #f8f8f8;
@@ -45,13 +45,14 @@ $c-background-transparent:      rgba($c-black, .04);
 $c-border:                      $c-gray-2;
 
 $c-link:                        $c-primary;
-$c-link-hover:                  $c-primary-darker;
+$c-link-hover:                  $c-primary-dark;
 
 $c-nav-link:                    $c-white;
 
 $c-btn:                         $c-white;
 $c-btn-bg:                      $c-secondary;
 $c-btn-bg-hover:                $c-primary;
+$c-btn-gradient:                linear-gradient(135deg, $c-primary 0%, $c-primary-light 33%, $c-secondary 66%, $c-secondary-light 100%);
 
 $c-secondary-btn:               $c-white;
 $c-secondary-btn-bg:            $c-secondary;

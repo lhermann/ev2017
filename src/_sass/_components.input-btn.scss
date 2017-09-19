@@ -10,12 +10,21 @@
     display: flex;
     white-space: nowrap; /* 1 */
     font-size: 0; /* 2 */
+
+    &--wrap {
+        display: block;
+        white-space: normal;
+    }
 }
 
     .c-input-btn__input,
     .c-input-btn__btn {
         vertical-align: middle;
         font-size: initial;
+
+        .c-input-btn--wrap & {
+            width: 100%;
+        }
     }
 
     /*
@@ -32,6 +41,11 @@
         .c-input-btn--no-border & {
             border-width: 0;
         }
+
+        .c-input-btn--wrap & {
+            border-radius: $global-radius;
+            margin-bottom: $unit-small;
+        }
     }
 
     /*
@@ -44,5 +58,9 @@
 
         .c-input-btn--no-border & {
            border-width: 0;
+        }
+
+        .c-input-btn--wrap & {
+            border-radius: $global-radius;
         }
     }

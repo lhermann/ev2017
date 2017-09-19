@@ -32,7 +32,7 @@ $(".jsWall").on("click", function(e) {
  * helper function toggles classes
  */
 function toggleWall(target) {
-    $(target).toggleClass("is-vissible");
+    $(target).toggleClass("is-visible");
     $(document.body).toggleClass("u-noscroll");
     allowScrolling = !allowScrolling;
 }

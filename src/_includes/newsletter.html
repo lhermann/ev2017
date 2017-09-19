@@ -1,37 +1,16 @@
-<div id="newsletterModalDesktop" class="c-modal c-modal--rightside u-hidden-until@tablet">
+<div id="newsletterModal" class="c-modal">
 
     <div class="c-modal__title">
-        <a class="c-modal__clickplace jsToggle" href="#" data-target="#newsletterModalDesktop" data-class="is-shown"></a>
-        E-Mail<br>Alarm
+        <a class="c-modal__clickplace jsToggle" href="#" data-target="#newsletterModal" data-class="is-visible"></a>
+        E-Mail <br class="u-hidden-until@tablet">Alarm
     </div>
 
     <div class="c-modal__body">
-        <div id="sib_embed_signup" class="forms-builder-wrapper" style="position:relative">
-            <div id="sib_loading_gif_area" style="position: absolute;z-index: 9999;display: none;">
-              <img src="https://my.sendinblue.com/public/theme/version4/assets/images/loader_sblue.gif" style="display: block;margin-left: auto;margin-right: auto;position: relative;top: 40%;">
-            </div>
-            <form class="c-form c-form--large description" id="theform" name="theform" action="https://my.sendinblue.com/users/subscribeembed/js_id/2vx38/id/1" onsubmit="return false;">
-                <input type="hidden" id="sib_embed_signup_lang" value="de">
-                <input type="hidden" id="sib_embed_invalid_email_message" value="Diese E-Mail-Adresse ist nicht gültig. ">
-                <input type="hidden" name="primary_type" id="primary_type" value="email">
-                <input type="hidden" name="js_id" id="js_id" value="2vx38">
-                <input type="hidden" name="listid" id="listid" value="5">
-                <input type="hidden" name="from_url" id="from_url" value="yes">
-                <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
-                <input type="hidden" name="req_hid" id="req_hid" value="">
-
-                <p class="u-mb--">Lassen Sie sich an das Event erinnern</p>
-                <div class="c-input-btn c-input-btn--no-border">
-                    <input class="c-input-btn__input" type="text" name="email" id="email" value="" placeholder="name@mail.de">
-                    <button class="c-input-btn__btn c-btn c-btn--primary c-btn--shadow" type="submit" data-editfield="subscribe">Anmelden</button>
-                </div>
-
-            </form>
-        </div>
+        {% include sendinblue.html %}
     </div>
 
     <div class="c-modal__close">
-        <a class="c-modal__clickplace jsToggle" href="#" data-target="#newsletterModalDesktop" data-class="is-shown"></a>
+        <a class="c-modal__clickplace jsToggle" href="#" data-target="#newsletterModal" data-class="is-visible"></a>
         <span class="u-ic-close"></span>
     </div>
 
@@ -45,28 +24,7 @@
     </div>
 
     <div class="c-modal__body">
-        <div id="sib_embed_signup" class="forms-builder-wrapper" style="position:relative">
-            <div id="sib_loading_gif_area" style="position: absolute;z-index: 9999;display: none;">
-              <img src="https://my.sendinblue.com/public/theme/version4/assets/images/loader_sblue.gif" style="display: block;margin-left: auto;margin-right: auto;position: relative;top: 40%;">
-            </div>
-            <form class="c-form c-form--large description" id="theform" name="theform" action="https://my.sendinblue.com/users/subscribeembed/js_id/2vx38/id/1" onsubmit="return false;">
-                <input type="hidden" id="sib_embed_signup_lang" value="de">
-                <input type="hidden" id="sib_embed_invalid_email_message" value="Diese E-Mail-Adresse ist nicht gültig. ">
-                <input type="hidden" name="primary_type" id="primary_type" value="email">
-                <input type="hidden" name="js_id" id="js_id" value="2vx38">
-                <input type="hidden" name="listid" id="listid" value="5">
-                <input type="hidden" name="from_url" id="from_url" value="yes">
-                <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
-                <input type="hidden" name="req_hid" id="req_hid" value="">
 
-                <p class="u-mb--">Lassen Sie sich an das Event erinnern</p>
-                <div class="c-input-btn c-input-btn--no-border">
-                    <input class="c-input-btn__input" type="text" name="email" id="email" value="" placeholder="name@mail.de">
-                    <button class="c-input-btn__btn c-btn c-btn--primary c-btn--shadow" type="submit" data-editfield="subscribe">Anmelden</button>
-                </div>
-
-            </form>
-        </div>
     </div>
 
     <div class="c-modal__close">
@@ -75,11 +33,3 @@
     </div>
 
 </div>
-
-<script type="text/javascript">
-    var sib_prefix = 'sib';
-    var sib_dateformat = 'dd-mm-yyyy';
-</script>
-
-<script type='text/javascript' src='https://my.sendinblue.com/public/theme/version4/assets/js/src/subscribe-validate.js?v=1504161398'></script>
-<!-- End : SendinBlue Signup Form HTML Code -->

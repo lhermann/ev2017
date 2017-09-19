@@ -3,6 +3,8 @@
    ========================================================================== */
 
 .c-form {
+    width: 100%;
+
     &--large {
         @include inuit-font-size(16px);
     }
@@ -11,48 +13,3 @@
         @include inuit-font-size(18px);
     }
 }
-
-    .c-form__input {
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, .2) inset;
-
-        &--no-border {
-            border-width: 0;
-        }
-    }
-
-    /*
-     * 1. Don't break button from input
-     * 2. if 100% width is reached save exactly the space for a button with icon
-     */
-    .c-form__input-with-btn {
-        white-space: nowrap; /* 1 */
-
-        .c-form__input {
-            border-radius: $global-radius 0 0 $global-radius;
-            padding-right: $unit;
-            max-width: calc(100% - 50px); /* 2 */
-            border-color: $c-primary;
-        }
-
-        .c-form__btn {
-            display: inline-block;
-            vertical-align: top;
-            line-height: 1.15; // same as input
-            border-radius: 0 $global-radius $global-radius 0;
-            margin-left: -.5em;
-        }
-    }
-
-    .c-form--large {
-        .c-form__input {
-            padding: $unit-small - 1px;
-
-            &--no-border {
-                padding: $unit-small;
-            }
-        }
-
-        .c-form__btn {
-            padding: $unit-small $unit;
-        }
-    }

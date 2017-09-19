@@ -1210,7 +1210,7 @@ __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsWall").on("click", function
  * helper function toggles classes
  */
 function toggleWall(target) {
-    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(target).toggleClass("is-vissible");
+    __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(target).toggleClass("is-visible");
     __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(document.body).toggleClass("u-noscroll");
     allowScrolling = !allowScrolling;
 }
