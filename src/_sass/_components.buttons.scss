@@ -182,13 +182,14 @@ $btn-ghost-border-width: 1px;
 
 /**
  * 1. shorter is visually more beautiful
- * 2. point 1 plus border width
+ * 2. 1. plus border width
  */
 .c-btn--icon {
     padding: 0;
     width: $unit-large;
     height: $unit-large - 3px; /* 1 */
     font-size: $unit;
+    line-height: $unit-large - 5px; /* 2 */
 }
 
 

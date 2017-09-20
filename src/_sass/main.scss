@@ -84,6 +84,12 @@ html {
     // }
 }
 
+main {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: $unit-huge;
+}
+
 h1 {
     font-family: $font-primary;
 }
@@ -148,6 +154,7 @@ $inuit-wrapper-width: 920px;
 @import "components.callout";
 @import "components.nav";
 @import "components.wall";
+@import "components.img";
 
 .c-sticky {
     @include mq($from: tablet) {

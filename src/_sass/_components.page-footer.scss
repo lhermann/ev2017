@@ -3,21 +3,10 @@
    ========================================================================== */
 
 .c-page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-image: $gradient-primary;
     padding: $unit 0;
     color: $c-white;
 }
-
-    // .c-page-footer__inner {
-    //     bottom: 0;
-    //     color: $c-primary;
-    //     font-size: 70%;
-    //     line-height: 1.1;
-    //     padding-bottom: $unit / 5;
-    //     position: absolute;
-    //     width: 100%;
-
-    //     > p {
-    //         margin-bottom: 0;
-    //     }
-    // }
