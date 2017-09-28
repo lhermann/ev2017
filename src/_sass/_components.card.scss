@@ -86,12 +86,17 @@
             color: $c-primary;
 
             @include mq($until: tablet) {
-                font-size: 150%;
+                font-size: 100%;
+                line-height: 1.3;
             }
         }
 
         .c-card__subtitle {
             margin-bottom: 0;
+            @include mq($until: tablet) {
+                line-height: 1.3;
+                word-break: break-all;
+            }
         }
 
         .c-card__meta {
