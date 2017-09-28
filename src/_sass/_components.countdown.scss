@@ -45,6 +45,10 @@
             .c-countdown__name {
                 font-size: 120%;
                 margin-bottom: 0;
+
+                @include mq($until: tablet) {
+                    font-size: 170%;
+                }
             }
 
             /**
