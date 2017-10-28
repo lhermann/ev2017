@@ -404,7 +404,7 @@ var module,
  */
 var countdownObject = $("#jsCountdown");
 var countdown = countdown(
-    new Date(2017, 9, 28, 19, 15),
+    new Date(2017, 9, 29, 19, 15),
     function(ts) {
         // console.log( ts.days );
         countdownObject.find("#days").html(spanEach(ts.days));
