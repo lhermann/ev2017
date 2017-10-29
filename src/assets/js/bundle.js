@@ -1495,7 +1495,7 @@ var module,
  */
 var countdownObject = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("#jsCountdown");
 var countdown = countdown(
-    new Date(2017, 9, 27, 19, 15),
+    new Date(2017, 9, 29, 19, 15),
     function(ts) {
         // console.log( ts.days );
         countdownObject.find("#days").html(spanEach(ts.days));
