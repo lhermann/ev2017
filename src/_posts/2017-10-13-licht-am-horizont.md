@@ -6,5 +6,5 @@ categories: video
 ---
 
 <div class="o-ratio o-ratio--16:9">
-    <iframe src="https://www.youtube-nocookie.com/embed/IzmyvyRxoPo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <iframe src="http://embed.joelmediatv.de/06496" frameborder="0" allowfullscreen></iframe>
 </div>

@@ -87,7 +87,7 @@ html {
 main {
     min-height: 100%;
     position: relative;
-    padding-bottom: $unit-huge;
+    padding-bottom: 75px; // footer height
 }
 
 h1 {
