@@ -192,4 +192,12 @@ $btn-ghost-border-width: 1px;
     line-height: $unit-large - 5px; /* 2 */
 }
 
+.c-btn--disabled {
+    opacity: .5;
+    cursor: default;
+    &:hover {
+        background-position: 100%;
+    }
+}
+
 

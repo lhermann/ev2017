@@ -1039,11 +1039,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__toggle_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wall_js__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__spambotscare_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_cookies_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__toggle_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wall_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__spambotscare_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_cookies_js__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_cookies_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_cookies_js__);
 // import "./countdown.js";
 
@@ -1052,38 +1052,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-/*
- * Trigger CTA
- * triggers the CTA when user has scrolled down to #program
- * sets a cookie afterwards so it happens only once
- */
-var cookie = __WEBPACK_IMPORTED_MODULE_4_cookies_js___default.a.get("_cta_triggered");
-var ctaTriggered = cookie ? true : false;
+// /*
+//  * Trigger CTA
+//  * triggers the CTA when user has scrolled down to #program
+//  * sets a cookie afterwards so it happens only once
+//  */
+// var cookie = Cookies.get("_cta_triggered");
+// var ctaTriggered = cookie ? true : false;
 
-// Register event handler
-if (!ctaTriggered) {
-    $(document).on("scroll", triggerCtaHandler);
-}
+// // Register event handler
+// if (!ctaTriggered) {
+//     $(document).on("scroll", triggerCtaHandler);
+// }
 
-// Event handler
-function triggerCtaHandler() {
-    if ($(this).scrollTop() >= $("#program").position().top) {
-        triggerCTA();
-    }
-}
+// // Event handler
+// function triggerCtaHandler() {
+//     if ($(this).scrollTop() >= $("#program").position().top) {
+//         triggerCTA();
+//     }
+// }
 
-// Trigger function
-function triggerCTA() {
-    ctaTriggered = true;
-    $("#newsletterModal").addClass("is-visible");
-    __WEBPACK_IMPORTED_MODULE_4_cookies_js___default.a.set("_cta_triggered", "true", { expires: 2592000 });
-    $(document).off("scroll", triggerCtaHandler);
-}
+// // Trigger function
+// function triggerCTA() {
+//     ctaTriggered = true;
+//     $("#newsletterModal").addClass("is-visible");
+//     Cookies.set("_cta_triggered", "true", { expires: 2592000 });
+//     $(document).off("scroll", triggerCtaHandler);
+// }
 
 
 /***/ }),
-/* 2 */,
-/* 3 */
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1103,7 +1102,7 @@ __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(window).ready(function(){
 
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1139,7 +1138,7 @@ __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()(".jsToggle").on("click", functi
 
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1198,7 +1197,7 @@ document.body.addEventListener("touchmove", function(e) {
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1235,7 +1234,7 @@ function spamrep() { this.href=this.href.replace(/spambotscare/,'') }
 
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*
