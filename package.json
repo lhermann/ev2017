@@ -14,6 +14,7 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npm run dev",
         "dev":
             "concurrently --kill-others -n \"jkyll,wbpck\" -c \"green.inverse,blue.inverse\" \"bundle exec jekyll serve --incremental\" \"webpack --watch\"; exit 0",
         "build": "webpack --optimize-minimize && bundle exec jekyll build"

@@ -6,23 +6,34 @@ permalink:  /impressum/
 
 # Impressum
 
+Letzte Aktualisierung: 29.5.2018
+
 ## Angaben gemäß § 5 TMG:
 
-<ul class="o-list-bare">
-    <li>It Is Written, Inc. mit Unterstützung von Joel Media Ministr e.V.</li>
-    <li>Seelhofenstraße 766</li>
-    <li>74395 Mundelsheim</li>
-</ul>
+Joel Media Ministry e. V.
+<br>Seelhofenstraße 76
+<br>74395 Mundelsheim
 
 ## Vertreten durch:
 
-1. Vorsitzender: Christopher Kramp
+Erster Vorsitzender: Christopher Kramp
 
 ## Kontakt:
 
-E-Mail: <noscript data-defuscate="true" data-name="info" data-domain="macht-glaube-hoffnung.de"><em>Diese E-Mail-Adresse ist durch JavaScript geschützt</em></noscript>
+Telefon: ‭+49 176 5752 2573
+<br>E-Mail: <noscript data-defuscate data-name="kontakt" data-domain="joelmediatv.de"><em>Diese E-Mail-Adresse ist durch JavaScript geschützt</em></noscript>
 
-## Haftungsausschluss (Disclaimer)
+## Registereintrag:
+
+Eintragung im Vereinsregister.
+<br>Registergericht: Amtsgericht Stuttgart
+<br>Registernummer: VR 721052
+
+## Streitschlichtung
+
+Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [https://ec.europa.eu/consumers/odr](https://ec.europa.eu/consumers/odr). Unsere E-Mail-Adresse finden Sie oben im Impressum.
+
+Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
 ### Haftung für Inhalte
 
@@ -32,7 +43,7 @@ Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach 
 
 ### Haftung für Links
 
-Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
 
 Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
 
