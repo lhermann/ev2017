@@ -268,10 +268,14 @@ var module,
                     c & 1
                         ? 1e3 / 30
                         : c & 2
-                          ? 1e3
-                          : c & 4
-                            ? 6e4
-                            : c & 8 ? 36e5 : c & 16 ? 864e5 : 6048e5,
+                            ? 1e3
+                            : c & 4
+                                ? 6e4
+                                : c & 8
+                                    ? 36e5
+                                    : c & 16
+                                        ? 864e5
+                                        : 6048e5,
                 h,
                 g = function() {
                     f(B(new n(), a, b, c, e, d), h);
@@ -404,7 +408,7 @@ var module,
  */
 var countdownObject = $("#jsCountdown");
 var countdown = countdown(
-    new Date(2017, 9, 31, 19, 15),
+    new Date(2018, 10, 9, 19, 30),
     function(ts) {
         // console.log( ts.days );
         countdownObject.find("#days").html(spanEach(ts.days));
