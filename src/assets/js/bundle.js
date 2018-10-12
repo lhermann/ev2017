@@ -70,7 +70,7 @@
 "use strict";
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
-/*! cash-dom 1.3.5, https://github.com/kenwheeler/cash @license MIT */
+/*! cash-dom 1.3.7, https://github.com/kenwheeler/cash @license MIT */
 ;(function (root, factory) {
   if (true) {
     !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
@@ -104,7 +104,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
   var frag;
   function parseHTML(str) {
     if (!frag) {
-      frag = doc.implementation.createHTMLDocument();
+      frag = doc.implementation.createHTMLDocument(null);
       var base = frag.createElement("base");
       base.href = doc.location.href;
       frag.head.appendChild(base);
@@ -117,7 +117,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
   function onReady(fn) {
     if (doc.readyState !== "loading") {
-      fn();
+      setTimeout(fn);
     } else {
       doc.addEventListener("DOMContentLoaded", fn);
     }
@@ -331,10 +331,10 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
     return (v.classList ? v.classList.contains(c) : new RegExp("(^| )" + c + "( |$)", "gi").test(v.className));
   }
 
-  function addClass(v, c, spacedName) {
+  function addClass(v, c) {
     if (v.classList) {
       v.classList.add(c);
-    } else if (spacedName.indexOf(" " + c + " ")) {
+    } else if (!hasClass(v, c)) {
       v.className += " " + c;
     }
   }
@@ -352,9 +352,8 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
       var classes = getClasses(c);
 
       return (classes ? this.each(function (v) {
-        var spacedName = " " + v.className + " ";
         each(classes, function (c) {
-          addClass(v, c, spacedName);
+          addClass(v, c);
         });
       }) : this);
     },
@@ -444,12 +443,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;
       }
       var classes = getClasses(c);
       return (classes ? this.each(function (v) {
-        var spacedName = " " + v.className + " ";
         each(classes, function (c) {
           if (hasClass(v, c)) {
             removeClass(v, c);
           } else {
-            addClass(v, c, spacedName);
+            addClass(v, c);
           }
         });
       }) : this);
@@ -1500,7 +1498,7 @@ var module,
 var countdownObject = __WEBPACK_IMPORTED_MODULE_0_cash_dom___default()("#jsCountdown");
 var countdown = countdown(
     // Take care: Month counts from 0
-    new Date(2018, 9, 9, 19, 30),
+    new Date(2018, 9, 12, 19, 30),
     function(ts) {
         // console.log( ts.days );
         countdownObject.find("#days").html(spanEach(ts.days));
@@ -1836,7 +1834,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*
 
     // AMD support
     if (true) {
-        !(__WEBPACK_AMD_DEFINE_RESULT__ = function () { return cookiesExport; }.call(exports, __webpack_require__, exports, module),
+        !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () { return cookiesExport; }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
     // CommonJS/Node.js support
     } else if (typeof exports === 'object') {

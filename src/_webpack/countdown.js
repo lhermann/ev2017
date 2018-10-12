@@ -409,7 +409,7 @@ var module,
 var countdownObject = $("#jsCountdown");
 var countdown = countdown(
     // Take care: Month counts from 0
-    new Date(2018, 9, 9, 19, 30),
+    new Date(2018, 9, 12, 19, 30),
     function(ts) {
         // console.log( ts.days );
         countdownObject.find("#days").html(spanEach(ts.days));

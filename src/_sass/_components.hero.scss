@@ -19,6 +19,7 @@
         .c-hero__slider {
             position: relative;
             z-index: 1;
+            overflow: hidden;
 
             > div {
                 background-size: cover;

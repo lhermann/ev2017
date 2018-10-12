@@ -33,7 +33,6 @@ $font-secondary: "Merriweather", serif;
 ////
 // TOOLS
 ////
-// @import "../../node_modules/inuitcss/tools/tools.rem";
 @import "../../node_modules/inuitcss/tools/tools.font-size";
 @import "../../node_modules/inuitcss/tools/tools.clearfix";
 @import "../../node_modules/inuitcss/tools/tools.hidden";
@@ -102,7 +101,7 @@ h3 {
 
 hr {
     border-color: $c-secondary;
-    border-top: 0;
+    border-width: 0 0 1px 0;
 }
 
 strong {
@@ -127,7 +126,7 @@ $inuit-wrapper-width: 920px;
 @import "../../node_modules/inuitcss/objects/objects.box";
 @import "../../node_modules/inuitcss/objects/objects.block";
 @import "../../node_modules/inuitcss/objects/objects.ratio";
-@import "../../node_modules/inuitcss/objects/objects.crop";
+// @import "../../node_modules/inuitcss/objects/objects.crop";
 // @import "../../node_modules/inuitcss/objects/objects.tables";
 @import "../../node_modules/inuitcss/objects/objects.pack";
 
