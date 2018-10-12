@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: jekyll
 
 destination: dist
 source: src
@@ -34,7 +34,7 @@ sass:
   sass_dir: _sass
   style: compressed
 
-gems:
+plugins:
   - jekyll-feed
 
 exclude:
@@ -46,4 +46,3 @@ exclude:
   - webpack
 
 port: 4002
-
